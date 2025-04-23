@@ -3,3 +3,8 @@ img.ondragstart = () => {
   return false;
 };
 
+function updateNames() {
+    alert("testing")
+
+}
+

@@ -23,3 +23,8 @@
     -o-user-select: text;
     user-select: text;
 }
+
+.sticks {
+    float: right;
+
+}
