@@ -8,3 +8,6 @@ function updateNames() {
 
 }
 
+let stick = document.getElementById("stick-image");
+
+
