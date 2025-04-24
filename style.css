@@ -26,5 +26,6 @@
 
 .TextBoxNames {
     float: right;
+    resize: none;
 
 }
