@@ -1,5 +1,6 @@
 const img = document.querySelector("img");
-img.ondragstart = () => {
+const images = document.getElementsByClassName("image");
+images.ondragstart = () => {
   return false;
 };
 
