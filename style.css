@@ -27,6 +27,7 @@
 .TextBoxNames {
     float: right;
     resize: none;
+    position: absolute;
 
 }
 
@@ -39,4 +40,9 @@
 
 .image {
     pointer-events: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }

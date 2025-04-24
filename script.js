@@ -1,3 +1,4 @@
+let stick = document.getElementById("stick-image");
 const img = document.querySelector("img");
 const images = document.getElementsByClassName("image");
 images.ondragstart = () => {
@@ -5,10 +6,11 @@ images.ondragstart = () => {
 };
 
 function updateNames() {
-    alert("testing")
+    let theValue = document.getElementById("nameBox").value;
+    alert(theValue)
 
 }
 
-let stick = document.getElementById("stick-image");
+
 
 
