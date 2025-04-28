@@ -14,7 +14,7 @@ function updateNames() {
 }
 
 $(document).keydown(function(event) {
-  if (event.key === 'Space') {
+  if (event.key === '/' || event.key === '?') {
     let names = document.getElementById('nameBox').value;  
     spin(names);
   }
