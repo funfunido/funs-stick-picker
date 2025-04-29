@@ -8,7 +8,7 @@ images.ondragstart = () => {
 
 
 function updateNames() {
-    //let theValue = document.getElementById("nameBox").value;
+    let theValue = document.getElementById("nameBox").value;
     //alert(theValue)
 
 }
