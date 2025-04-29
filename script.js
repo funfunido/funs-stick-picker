@@ -8,8 +8,8 @@ images.ondragstart = () => {
 
 
 function updateNames() {
-    let theValue = document.getElementById("nameBox").value;
-    alert(theValue)
+    //let theValue = document.getElementById("nameBox").value;
+    //alert(theValue)
 
 }
 
@@ -21,7 +21,15 @@ $(document).keydown(function(event) {
 });
 
 function spin(names) {
-    alert(names)
+    //alert(names)
+    var arrayOfLines = $('#textAreaID').val().split('\n');
+
+    var item = arrayofLines[Math.floor(Math.random()*items.length)];
+
+
+    alert(item)
+
+
 
 }
 
