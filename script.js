@@ -24,7 +24,7 @@ function spin(names) {
     //alert(names)
     var arrayOfLines = $('#nameBox').val().split('\n');
 
-    var item = arrayOfLines[Math.floor(Math.random()*items.length)];
+    var item = arrayOfLines[Math.floor(Math.random()*arrayOfLines.length)];
 
 
     alert(item)
