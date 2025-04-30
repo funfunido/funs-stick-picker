@@ -22,7 +22,7 @@ $(document).keydown(function(event) {
 
 function spin(names) {
     //alert(names)
-    var arrayOfLines = $('#textAreaID').val().split('\n');
+    var arrayOfLines = $('#nameBox').val().split('\n');
 
     var item = arrayofLines[Math.floor(Math.random()*items.length)];
 
