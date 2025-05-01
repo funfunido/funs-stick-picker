@@ -54,6 +54,8 @@ html, body {
 }
 
 .cupthing {
+    position: relative;
+    left: 100px;
     bottom: 100px;
 
 }
@@ -69,7 +71,7 @@ html, body {
 }
 
 .winnerheading {
-text-align: center;
+    text-align: center;
 
 }
 
