@@ -6,6 +6,9 @@ images.ondragstart = () => {
   return false;
 };
 
+function containsAlphabet(str) {
+  return /[a-zA-Z]/.test(str);
+}
 
 function updateNames() {
     let theValue = document.getElementById("nameBox").value;
@@ -35,10 +38,10 @@ function spin(names) {
 
     var item = arrayOfLines[Math.floor(Math.random()*arrayOfLines.length)];
 
-    if (boxVal == "" || boxVal == " ") {
-      alert("You can't enter nothing in the names box. Enter at least 2 names, then try again.");
-    } else {
+    if (containsAlphabet(boxVal)) {
       alert(item);
+    } else {
+      alert("You can't enter nothing in the names box. Enter at least 2 names, then try again.");
 
 
     }
