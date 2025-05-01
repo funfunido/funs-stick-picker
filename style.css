@@ -31,10 +31,10 @@ html, body {
 }
 
 .TextBoxNames {
-    float: right;
+    float: left;
     resize: none;
-    position: absolute;
-
+    /*position: absolute;*/
+    position: static;
 }
 
 #containerthing {
@@ -42,7 +42,6 @@ html, body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100%;
 }
 
 .image {
@@ -57,4 +56,24 @@ html, body {
 .cupthing {
     bottom: 100px;
 
+}
+
+#othercontainerforwinning {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 2px solid #e6aa07;
+    float: right;
+
+
+}
+
+.winnerheading {
+text-align: center;
+
+}
+
+
+.winnername {
+    text-align: center;
 }

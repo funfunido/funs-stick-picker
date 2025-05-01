@@ -1,5 +1,10 @@
 let stick = document.getElementById("stick-image");
 
+const winnerDiv = document.getElementById("othercontainerforwinning");
+
+winnerDiv.style.display = "none";
+
+
 const img = document.querySelector("img");
 const images = document.getElementsByClassName("image");
 images.ondragstart = () => {
@@ -39,7 +44,11 @@ function spin(names) {
     var item = arrayOfLines[Math.floor(Math.random()*arrayOfLines.length)];
 
     if (containsAlphabet(boxVal)) {
-      alert(item);
+      //alert(item);
+      winnerDiv.style.display = "block";
+      document.getElementById("winnerText").innerHTML = item;
+
+
     } else {
       alert("You can't enter nothing in the names box. Enter at least 2 names, then try again.");
 
