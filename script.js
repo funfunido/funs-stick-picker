@@ -4,6 +4,10 @@ const winnerDiv = document.getElementById("othercontainerforwinning");
 
 winnerDiv.style.display = "none";
 
+const stickImage = document.getElementById("stick-image");
+
+stickImage.style.display = "none";
+
 
 const img = document.querySelector("img");
 const images = document.getElementsByClassName("image");
