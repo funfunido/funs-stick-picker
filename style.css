@@ -3,6 +3,12 @@
     src: url(/fonts/Bolyfat.otf);
     /* Credits to Khurasan for the S tier font. Here's their profile on dafont: https://www.dafont.com/khurasan.d5849 */
 }
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 .sticktitlething {
     text-align: center;
     font-family: "Bolyfat", serif;
@@ -36,6 +42,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    height: 100%;
 }
 
 .image {
