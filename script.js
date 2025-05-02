@@ -67,5 +67,13 @@ function spin(names) {
 }
 
 
+function close() {
+  let winnerDisadv = document.getElementById("othercontainerforwinning");
+
+  winnerDisadv.style.display = "none";
+
+}
+
+
 
 
