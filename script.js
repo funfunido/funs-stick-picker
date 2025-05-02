@@ -68,12 +68,44 @@ function spin(names) {
 
 
 function close() {
-  let winnerDisadv = document.getElementById("othercontainerforwinning");
+  var athing = document.getElementById("othercontainerforwinning");
 
-  winnerDisadv.style.display = "none";
+  athing.style.display = "none";
 
 }
 
+
+function dataStore1() {
+  if (localStorage.getItem("dataStore1") == null) {
+    localStorage.setItem("dataStore1", boxVal);
+
+
+  } else {
+    document.getElementById("nameBox").value = localStorage.getItem("dataStore1");
+    alert("saved")
+
+
+  }
+
+}
+function dataStore2() {
+
+  
+}
+
+function dataStore3() {
+
+  
+}
+function dataStore4() {
+
+  
+}
+
+function dataStore5() {
+
+  
+}
 
 
 
