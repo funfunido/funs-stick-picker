@@ -77,7 +77,7 @@ function windowCLS() {
 
 function dataStore1() {
   if (localStorage.getItem("dataStore1") == null) {
-    localStorage.setItem("dataStore1", boxVal);
+    localStorage.setItem("dataStore1", document.getElementById("nameBox").value);
     alert("successfully saved save")
 
 
@@ -90,21 +90,61 @@ function dataStore1() {
 
 }
 function dataStore2() {
+  if (localStorage.getItem("dataStore2") == null) {
+    localStorage.setItem("dataStore2", document.getElementById("nameBox").value);
+    alert("successfully saved save")
 
+
+  } else {
+    document.getElementById("nameBox").value = localStorage.getItem("dataStore2");
+    alert("successfully loaded save")
+
+
+  }
   
 }
 
 function dataStore3() {
+  if (localStorage.getItem("dataStore3") == null) {
+    localStorage.setItem("dataStore3", document.getElementById("nameBox").value);
+    alert("successfully saved save")
 
+
+  } else {
+    document.getElementById("nameBox").value = localStorage.getItem("dataStore3");
+    alert("successfully loaded save")
+
+
+  }
   
 }
 function dataStore4() {
+  if (localStorage.getItem("dataStore4") == null) {
+    localStorage.setItem("dataStore4", document.getElementById("nameBox").value);
+    alert("successfully saved save")
 
+
+  } else {
+    document.getElementById("nameBox").value = localStorage.getItem("dataStore4");
+    alert("successfully loaded save")
+
+
+  }
   
 }
 
 function dataStore5() {
+  if (localStorage.getItem("dataStore5") == null) {
+    localStorage.setItem("dataStore5", document.getElementById("nameBox").value);
+    alert("successfully saved save")
 
+
+  } else {
+    document.getElementById("nameBox").value = localStorage.getItem("dataStore5");
+    alert("successfully loaded save")
+
+
+  }
   
 }
 
