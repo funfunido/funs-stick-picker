@@ -67,7 +67,7 @@ function spin(names) {
 }
 
 
-function close() {
+function windowCLS() {
   var athing = document.getElementById("othercontainerforwinning");
 
   athing.style.display = "none";
