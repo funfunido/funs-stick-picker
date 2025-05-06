@@ -78,11 +78,12 @@ function windowCLS() {
 function dataStore1() {
   if (localStorage.getItem("dataStore1") == null) {
     localStorage.setItem("dataStore1", boxVal);
+    alert("successfully saved save")
 
 
   } else {
     document.getElementById("nameBox").value = localStorage.getItem("dataStore1");
-    alert("saved")
+    alert("successfully loaded save")
 
 
   }
