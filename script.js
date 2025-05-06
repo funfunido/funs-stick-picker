@@ -149,4 +149,15 @@ function dataStore5() {
 }
 
 
+function deleteAllSaves() {
+  if (confirm("Are you sure you want to proceed? This will delete all of your saves!")) {
+    localStorage.clear();
+    alert("All Saves successfully cleared.")
+  } else {
+    console.log("User clicked Cancel. Action aborted.");
+  }
+
+
+}
+
 
