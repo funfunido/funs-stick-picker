@@ -60,9 +60,12 @@ html, body {
 }
 
 .cupthing {
-    position: relative;
-    left: 100px;
-    bottom: 100px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 
 }
 
@@ -91,6 +94,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
 
 
 }
