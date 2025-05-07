@@ -25,7 +25,7 @@ function updateNames() {
     var arrayOfthing = $('#nameBox').val().split('\n');
 
     arrayOfthing.forEach(function(element) {
-      console.log("sdfsdf")
+      //console.log("Element Rendered")
   });
   
 
@@ -46,6 +46,8 @@ function spin(names) {
     var arrayOfLines = $('#nameBox').val().split('\n');
 
     var item = arrayOfLines[Math.floor(Math.random()*arrayOfLines.length)];
+
+    document.getElementById("nameBox").blur();
 
     if (containsAlphabet(boxVal)) {
       //alert(item);
@@ -79,6 +81,7 @@ function dataStore1() {
   if (localStorage.getItem("dataStore1") == null) {
     localStorage.setItem("dataStore1", document.getElementById("nameBox").value);
     alert("successfully saved save")
+    document.getElementById("save1").innerHTML = "Load Save 1";
 
 
   } else {
@@ -93,6 +96,7 @@ function dataStore2() {
   if (localStorage.getItem("dataStore2") == null) {
     localStorage.setItem("dataStore2", document.getElementById("nameBox").value);
     alert("successfully saved save")
+    document.getElementById("save2").innerHTML = "Load Save 2";
 
 
   } else {
@@ -108,6 +112,7 @@ function dataStore3() {
   if (localStorage.getItem("dataStore3") == null) {
     localStorage.setItem("dataStore3", document.getElementById("nameBox").value);
     alert("successfully saved save")
+    document.getElementById("save3").innerHTML = "Load Save 3";
 
 
   } else {
@@ -122,6 +127,7 @@ function dataStore4() {
   if (localStorage.getItem("dataStore4") == null) {
     localStorage.setItem("dataStore4", document.getElementById("nameBox").value);
     alert("successfully saved save")
+    document.getElementById("save4").innerHTML = "Load Save 4";
 
 
   } else {
@@ -137,6 +143,7 @@ function dataStore5() {
   if (localStorage.getItem("dataStore5") == null) {
     localStorage.setItem("dataStore5", document.getElementById("nameBox").value);
     alert("successfully saved save")
+    document.getElementById("save5").innerHTML = "Load Save 5";
 
 
   } else {
@@ -153,6 +160,11 @@ function deleteAllSaves() {
   if (confirm("Are you sure you want to proceed? This will delete all of your saves!")) {
     localStorage.clear();
     alert("All Saves successfully cleared.")
+    document.getElementById("save1").innerHTML = "Save 1";
+    document.getElementById("save2").innerHTML = "Save 2";
+    document.getElementById("save3").innerHTML = "Save 3";
+    document.getElementById("save4").innerHTML = "Save 4";
+    document.getElementById("save5").innerHTML = "Save 5";
   } else {
     console.log("User clicked Cancel. Action aborted.");
   }

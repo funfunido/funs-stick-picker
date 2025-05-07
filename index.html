@@ -15,12 +15,12 @@ Then, press ? or / to pick a name. When the name is picked, you can close the wi
 There are Save buttons 1-5. Click them to save the names currently in the textboxes. Then, click it again at a later time to load the saved names.
 There is also a delete save button, to delete all current saves.
 </pre>
-    <textarea placeholder="Insert Names Here, 1 for each line" id="nameBox" class="TextBoxNames" rows="50" cols="50" oninput="updateNames()"></textarea>
+    <textarea placeholder="Insert Names Here, 1 for each line" id="nameBox" class="TextBoxNames" rows="45" cols="45" oninput="updateNames()"></textarea>
 <div id="containerthing">
     <img src="/images/stick-crop.png" id="stick-image" class="image" width="4%" height="70%">
     <!--<img src="/images/cup.png" id="cup" class="image cupthing" width="25%" height="25%">-->
 </div>
-<img src="/images/cup.png" id="cup" class="image cupthing" width="25%" height="25%">
+<img src="/images/cup.png" id="cup" class="image cupthing" width="300px" height="300px">
 <div id="othercontainerforwinning">
     <p class="winnerheading">The person picked is:</p>
     <br>
@@ -30,13 +30,15 @@ There is also a delete save button, to delete all current saves.
     <button>Remove</button>
 
 </div>
-
-<button onclick="dataStore1();">Save 1</button>
-<button onclick="dataStore2();">Save 2</button>
-<button onclick="dataStore3();">Save 3</button>
-<button onclick="dataStore4();">Save 4</button>
-<button onclick="dataStore5();">Save 5</button>
+<div id="buttoncontainer">
+<button onclick="dataStore1();" id="save1">Save 1</button>
+<button onclick="dataStore2();" id="save2">Save 2</button>
+<button onclick="dataStore3();" id="save3">Save 3</button>
+<button onclick="dataStore4();" id="save4">Save 4</button>
+<button onclick="dataStore5();" id="save5">Save 5</button>
 <button onclick="deleteAllSaves();">Delete All Saves 1-5</button>
+</div>
+
 
     <script src="script.js"></script>
 </body>

@@ -85,3 +85,12 @@ html, body {
 .winnername {
     text-align: center;
 }
+
+#buttoncontainer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
