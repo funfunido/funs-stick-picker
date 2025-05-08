@@ -8,13 +8,33 @@ const stickImage = document.getElementById("stick-image");
 
 stickImage.style.display = "none";
 
+if (localStorage.getItem("dataStore1") !== null) {
+  document.getElementById("save1").innerHTML = "Load Save 1";
+}
+if (localStorage.getItem("dataStore2") !== null) {
+  document.getElementById("save2").innerHTML = "Load Save 2";
+}
+
+if (localStorage.getItem("dataStore3") !== null) {
+  document.getElementById("save3").innerHTML = "Load Save 3";
+}
+
+if (localStorage.getItem("dataStore4") !== null) {
+  document.getElementById("save4").innerHTML = "Load Save 4";
+}
+
+if (localStorage.getItem("dataStore5") !== null) {
+  document.getElementById("save5").innerHTML = "Load Save 5";
+}
+
+// this top code defines the containers and the stick, and checks if datastores are already existing, and sets the text in the button so people know
 
 const img = document.querySelector("img");
 const images = document.getElementsByClassName("image");
 images.ondragstart = () => {
   return false;
 };
-
+//disables dragging the cup
 function containsAlphabet(str) {
   return /[a-zA-Z]/.test(str);
 }
@@ -67,7 +87,7 @@ function spin(names) {
 
 
 }
-
+// shows the container, defocuses the text box, checks if there is anything in the textbox, and changes the winner text to the randomly picked item
 
 function windowCLS() {
   var athing = document.getElementById("othercontainerforwinning");
@@ -75,7 +95,7 @@ function windowCLS() {
   athing.style.display = "none";
 
 }
-
+//function to hide container
 
 function dataStore1() {
   if (localStorage.getItem("dataStore1") == null) {
@@ -154,7 +174,7 @@ function dataStore5() {
   }
   
 }
-
+// these are all datastore buttons that check if they exist, and if they don't, created a datastore, and if they do, it loads it
 
 function deleteAllSaves() {
   if (confirm("Are you sure you want to proceed? This will delete all of your saves!")) {
@@ -171,5 +191,5 @@ function deleteAllSaves() {
 
 
 }
-
+//function for clearing datastores, and resetting the buttons' text
 

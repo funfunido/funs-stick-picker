@@ -1,3 +1,5 @@
+/* basic styling for webpage, like the cup is centered, buttons are on bottom, text and others are aligned to the center, stuff like that */
+
 @font-face {
     font-family: "Bolyfat";
     src: url(/fonts/Bolyfat.otf);
@@ -92,7 +94,7 @@ html, body {
 #buttoncontainer {
     position: absolute;
     left: 50%;
-    top: 30%;
+    top: 80%;
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
