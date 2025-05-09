@@ -51,7 +51,6 @@ function updateNames() {
 
 }
 
-
 $(document).keydown(function(event) {
   if (event.key === '/' || event.key === '?') {
     let names = document.getElementById('nameBox').value;  
@@ -177,6 +176,8 @@ function dataStore5() {
   }
   
 }
+
+
 // these are all datastore buttons that check if they exist, and if they don't, created a datastore, and if they do, it loads it
 
 function deleteAllSaves() {
@@ -196,3 +197,20 @@ function deleteAllSaves() {
 }
 //function for clearing datastores, and resetting the buttons' text
 
+function removeItemFromMultilineTextBox(textBox, itemToRemove) {
+  let lines = textBox.value.split('\n');
+  let index = lines.indexOf(itemToRemove);
+  if (index > -1) {
+    lines.splice(index, 1);
+    textBox.value = lines.join('\n');
+  }
+}
+
+function removeSelectedName() {
+  let theArea = document.getElementById('nameBox');
+  removeItemFromMultilineTextBox(theArea, document.getElementById("winnerText").innerHTML);
+  windowCLS();
+
+}
+
+/// these functions remove an item from a multiline textbox, and then gets the current textbox, and removes it, using the current text winner, then closes the window
