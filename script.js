@@ -51,6 +51,7 @@ function updateNames() {
 
 }
 
+
 $(document).keydown(function(event) {
   if (event.key === '/' || event.key === '?') {
     let names = document.getElementById('nameBox').value;  
@@ -65,7 +66,9 @@ function spin(names) {
 
     var arrayOfLines = $('#nameBox').val().split('\n');
 
-    var item = arrayOfLines[Math.floor(Math.random()*arrayOfLines.length)];
+    var newArray = arrayOfLines.filter(item => typeof item === 'string' && /[a-zA-Z]/.test(item));
+
+    var item = newArray[Math.floor(Math.random()*newArray.length)];
 
     document.getElementById("nameBox").blur();
 
