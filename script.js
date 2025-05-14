@@ -102,13 +102,13 @@ function windowCLS() {
 function dataStore1() {
   if (localStorage.getItem("dataStore1") == null) {
     localStorage.setItem("dataStore1", document.getElementById("nameBox").value);
-    alert("successfully saved save")
+    alert("Successfully Saved Save #1")
     document.getElementById("save1").innerHTML = "Load Save 1";
 
 
   } else {
     document.getElementById("nameBox").value = localStorage.getItem("dataStore1");
-    alert("successfully loaded save")
+    alert("Successfully Loaded Save #1")
 
 
   }
@@ -117,13 +117,13 @@ function dataStore1() {
 function dataStore2() {
   if (localStorage.getItem("dataStore2") == null) {
     localStorage.setItem("dataStore2", document.getElementById("nameBox").value);
-    alert("successfully saved save")
+    alert("Successfully Saved Save #2")
     document.getElementById("save2").innerHTML = "Load Save 2";
 
 
   } else {
     document.getElementById("nameBox").value = localStorage.getItem("dataStore2");
-    alert("successfully loaded save")
+    alert("Successfully Loaded Save #2")
 
 
   }
@@ -133,13 +133,13 @@ function dataStore2() {
 function dataStore3() {
   if (localStorage.getItem("dataStore3") == null) {
     localStorage.setItem("dataStore3", document.getElementById("nameBox").value);
-    alert("successfully saved save")
+    alert("Successfully Saved Save #3")
     document.getElementById("save3").innerHTML = "Load Save 3";
 
 
   } else {
     document.getElementById("nameBox").value = localStorage.getItem("dataStore3");
-    alert("successfully loaded save")
+    alert("Successfully Loaded Save #3")
 
 
   }
@@ -148,13 +148,13 @@ function dataStore3() {
 function dataStore4() {
   if (localStorage.getItem("dataStore4") == null) {
     localStorage.setItem("dataStore4", document.getElementById("nameBox").value);
-    alert("successfully saved save")
+    alert("Successfully Saved Save #4")
     document.getElementById("save4").innerHTML = "Load Save 4";
 
 
   } else {
     document.getElementById("nameBox").value = localStorage.getItem("dataStore4");
-    alert("successfully loaded save")
+    alert("Successfully Loaded Save #4")
 
 
   }
@@ -164,13 +164,13 @@ function dataStore4() {
 function dataStore5() {
   if (localStorage.getItem("dataStore5") == null) {
     localStorage.setItem("dataStore5", document.getElementById("nameBox").value);
-    alert("successfully saved save")
+    alert("Successfully Saved Save #5")
     document.getElementById("save5").innerHTML = "Load Save 5";
 
 
   } else {
     document.getElementById("nameBox").value = localStorage.getItem("dataStore5");
-    alert("successfully loaded save")
+    alert("Successfully Loaded Save #5")
 
 
   }
